@@ -1,6 +1,8 @@
 
 * {
     font-family: fantasy;
+    font-size: 3em;
+    display: block;
     }
     
     @import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=BIZ+UDPMincho&family=Mukta&family=Noto+Sans+SC&family=Noto+Serif+TC:wght@200&family=Oswald:wght@300&family=Road+Rage&display=swap');
@@ -9,7 +11,7 @@
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         background-color: rgb(116, 0, 224);
         border-radius: 43px;
-        padding: 15px;
+        padding: 7.5px;
     }
 
     div {
@@ -21,4 +23,14 @@
         color: rgba(245, 0, 233, 0.863);
         font-family: 'Press Start 2P', cursive;
         font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
     }
+
+    .storyText {
+        text-indent: 10%;
+    }
+
+  
