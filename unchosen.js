@@ -32,7 +32,7 @@ var story = {
     }
 
     Firearm: {
-         text: "Wanting to be the hack and slash person, you asked the boastful expert that you are interested in that type of art. It’ll take a maximum of 6 months to complete."
+         text: "Wanting to be the hack and slash person, you asked the boastful expert that you are interested in that type of art. It will take a maximum of 6 months to complete."
     }
 
     Sword: {
@@ -40,27 +40,32 @@ var story = {
     }
 
    Test: {
-       text: ""
-       options: [[""],[""],[""]]
+       text: "Now that your training has been completed, you and a group of new recruits are now being tested on a monster that happens to be nearby."
+     options: [["Guinea Pig"," Experiment on a friend as a guinea pig."],["Try Out","Use the ability on monster "]]
    } 
 
+//needs choices leading to hoard
+
    Hoard: {
-       text: ""
-       options: [[""],[""],[""]]
+       text: "After defeating the monster you find a hoard in a large cave that they were guarding that is now ripe for the taking."
+       options: [["Left","explore left side"],["Right","explore right side"]["Do Nothing"," don’t explore"]]
    }
 
+//explore left needed
+
    Hole: {
-       text: ""
+       text: "Unfortunately you fell down a hole and are now separated from the group. Now you have to find a way out by yourself."
+       options: [["Proceed1", "explore"]]
    }
 
    Proceed1: {
-       text: ""
-       options: [[""],[""],[""]]
+       text: "Suddenly, you came across armored beings with red lights glowing from within their bodies. You recognize that they were the Destroyer’s elite troopers, the Hellers, thanks to descriptions from the group thanks to their previous. What should you do now?"
+       options: [["Attack","Attack Head-on (Dies)"],["Flee","Flee"],["Tunnel","Look for a way around"]]
    }
 
    Tunnel: {
-       text: ""
-       options: [[""],[""],[""]] 
+       text: "There must be a way to escape. Quickly you spot a tunnel.  Should you go for it?"
+       options: [["Fight","Decide to Fight Instead"],["Enter","Take the tunnel"]] 
    }
 
    Enter: {
@@ -68,35 +73,51 @@ var story = {
    }
 
    Artifict: {
-       text: ""
-       options: [[""],[""],[""]]
+       text: "You come across an artifact that appears to be over a million… not much older than that. Should you inspect it?"
+       options: [["Touch","Touch It (end)"],["Don't Touch","Probably Not Worth It"]]
    }
 
    Hellers: {
-       text:""
-       options: [[""],[""],[""]]
+       text:"Suddenly, you came across armored beings with red lights glowing from within their bodies. You recognize that they were the Destroyer’s elite troopers, the Hellers, thanks to descriptions from the group thanks to their previous. What should you do now?"
+       options: [["With Firearm","You picked Firearm"],["With Sword","You picked the sword"],["With Magic","You picked magic"]]
    }
 
 Proceed2: {
-    text: ""
+    text: "  You continued on deep into the cave. There’s a light ahead of you. Could this be the exit? "
     options: [["Investigate"]]
 }
 
 LeaveCave: {
-    text: ""
-    options: [[""],[""],[""]]
+    text: "After you leave the cave, you and the group continue to transverse the land until you run into a new danger. You see a group of average people being marched off by minions of the Destroyer. You now have a choice either to help them or follow them."
+    options: [["Save Them","The groups choses to save them"],["Don't Save Them","You decided not to save them"]]
 }
 
 Boss: {
-    text: ""
-    options: [[""],[""],[""],[""]]
+    text: "…The Destroyer being itself. It lets out a defining roar that warns you that it’s better to make good decisions. What to do now?"
+    options: [["Run Away","You run away in fear"],["Charge Head-On", "You charged head-on"],["Ready Up","You prepare for the inevitable fight."]]
 }
 
-Ending: {
-    text: ""
-    options: [[""],[""],[""]]
+Cilmax: {
+    text: "……I can see how much your childhood was. Orphaned. Abandoned. Casted as an underdog……” the Destroyer monologues. “Actually my life was normal. First of all, my parents are alive and I am not an underdog.” you immetateildy pointed out. “Oh hang on for a minute.” the Destroyer said as it looked at a scroll again."
+    
+    '5 minutes later……'  
+    
+    "Well it appears that your friend Jack was the one who was supposed to meet me but that wasn't how it was supposed to go. But I’m not into that chosen one thing. Since you’re in Jack’s place, I have a deal for you instead."
+    
+    "And what is it?” you asked."
+    
+    "Do you wish for a world where everything is better, like not having to live in poverty while the rich enjoy a good lifestyle or…."
+    
+    'Later….'
+
+    "Take my deal, and we will make the world a better place."
+    options: [["Frick No"],["Accept"]]
 }
 
+Frick: {
+text: "With his mysterious power, the Destroyer freezes time just as the group arrived. This leaves only you, Jack and the Destroyer unfroze by its eternal powers. “That’s better.” the Destroyer remarks. It then reveals the entire truth. The group that you had followed were a bunch of cultists who are planning to take over the world once they defeat the Destroyer and take his powers to control reality. Jack is not sure. Surely the Destroyer is bloating."
+options: [["Believe"],["Don't Believe"]]
+}
 
 
 
