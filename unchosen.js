@@ -55,7 +55,7 @@ var story = {
 
    Hole: {
        text: "Unfortunately you fell down a hole and are now separated from the group. Now you have to find a way out by yourself."
-       options: [["Proceed1", "explore"]]
+
    }
 
    Proceed1: {
@@ -118,7 +118,6 @@ Frick: {
 text: "With his mysterious power, the Destroyer freezes time just as the group arrived. This leaves only you, Jack and the Destroyer unfroze by its eternal powers. “That’s better.” the Destroyer remarks. It then reveals the entire truth. The group that you had followed were a bunch of cultists who are planning to take over the world once they defeat the Destroyer and take his powers to control reality. Jack is not sure. Surely the Destroyer is bloating."
 options: [["Believe"],["Don't Believe"]]
 }
-
 
 
 
