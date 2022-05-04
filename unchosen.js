@@ -50,28 +50,31 @@ Guinea_Pig: {
 }
 
 Try_Out: {
-    text: "Using a little trick you learned from training, you distracted the monster when the other recruits finished the monster off. “Now that’s what I’m talking about.”"
-    options: [["Hoard"]]
+    text: "Using a little trick you learned from training, you distracted the monster when the other recruits finished the monster off. “Now that’s what I’m talking about.” you then see a cave behind it"
+    options: [["Hoard", "explore the cave"]]
 }
 
    Hoard: {
        text: "After defeating the monster you find a hoard in a large cave that they were guarding that is now ripe for the taking."
-       options: [["Left","explore left side"],["Right","explore right side"]["Do Nothing"," don’t explore"]]
+       options: [["explore","explore side"]["LeaveCave"," don’t explore"]]
    }
 
-//explore left needed
-
-   Hole: {
+   explore: {
        text: "Unfortunately you fell down a hole and are now separated from the group. Now you have to find a way out by yourself."
-
+       options: [["Proceed1", "move forward"]]
    }
 
-   Proceed1: {
+    Proceed1: {
        text: "Suddenly, you came across armored beings with red lights glowing from within their bodies. You recognize that they were the Destroyer’s elite troopers, the Hellers, thanks to descriptions from the group thanks to their previous. What should you do now?"
-       options: [["Attack","Attack Head-on (Dies)"],["Flee","Flee"],["Tunnel","Look for a way around"]]
+       options: [["Attack","Attack Head-on"],["Flee","Flee"],["Tunnel","Look for a way around"]]
    }
 
-   Tunnel: {
+    Attack: {
+        text: "Without thinking, you charged head-on into the horde. Only to be terminated by the Hellers easily. Better luck next time."
+        options: [["prolog","restart"]]
+    }
+
+    Tunnel: {
        text: "There must be a way to escape. Quickly you spot a tunnel.  Should you go for it?"
        options: [["Fight","Decide to Fight Instead"],["Enter","Take the tunnel"]] 
    }
@@ -142,8 +145,31 @@ text: "“You’re lying.” you said as you proceeded to unleash your ultimate 
 
 "Woah. You actually defeated the Destroyer!” your friend Jack cheered. “The prochory stated that it should be me but you were the one that actually did it."
 
-The group congratulated you and with your new powers gained, you are now in charge of different realities. You are the…"
+"The group congratulated you and with your new powers gained, you are now in charge of different realities. You are the…"
 }
 
+function updateStats() {
+    statArea = getElementById("stats");
+    statArea.innerHTML = gameData;
+}
+
+function gameOutput(event) {
+
+    if (nameGate == false) {
+        let textName = gameData['nameInput'].value;
+        let output = document.GetElementById('output');
+        player.name = textName;
+        nameGate = true;
+    }
+
+    console.log();
+    for (i=0; i < nextRoom.modifiers.length; i++) {
+
+    }
+
+    console.log(player);
+}
+
+gamePage.addEventListener('submit', gameOutput)
 
 

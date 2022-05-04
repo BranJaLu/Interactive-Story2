@@ -1,7 +1,4 @@
 
-* {
-    font-family: fantasy;
-    }
     
     @import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=BIZ+UDPMincho&family=Mukta&family=Noto+Sans+SC&family=Noto+Serif+TC:wght@200&family=Oswald:wght@300&family=Road+Rage&display=swap');
 
@@ -10,10 +7,6 @@
         background-color: rgb(116, 0, 224);
         border-radius: 3px;
         padding: 7.5px;
-    }
-
-    div {
-        display: block;
     }
 
     body {
@@ -30,4 +23,33 @@
         text-indent: 10%;
     }
 
+    button{
+        font-size: 2em;
+        background-color: chartreuse;
+        padding: .5em;
+        border: 2.2em;
+        border-radius: .3em;
+    }
+
+    .buttonPadding {
+        width: 3%;
+        padding: .6em;
+    }
+
+    button:hover{
+        transition: 1s;
+        cursor: pointer;
+        background-color: chocolate;
+    }
   
+    .row {
+         display: flex;
+         flex-direction: row;
+     }
+
+     .row1 {
+         display: flex;
+         flex-direction: row;
+         background-color: beige;
+         border-radius: .68em;
+     }
