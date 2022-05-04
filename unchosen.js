@@ -27,7 +27,7 @@ var story = {
         text: "The group offers to train the hero in a specific skill to prepare them for the fight."
         options: [["magic", "learn magic"], ["sword", "learn to swordfight"], ["gun", "learn to use a gun"]]
     }
-    Magic: {
+    Magic: { // need options text
         text: "You always wanted to learn how to use magic. While a bit strict, she is the most empathetic and also the youngest of the group. But this learning of magic is very complex and you will have to learn the basics for 8 months. Hope that you are prepared to use it properly."
     }
 
@@ -41,10 +41,18 @@ var story = {
 
    Test: {
        text: "Now that your training has been completed, you and a group of new recruits are now being tested on a monster that happens to be nearby."
-     options: [["Guinea Pig"," Experiment on a friend as a guinea pig."],["Try Out","Use the ability on monster "]]
+     options: [["Guinea_Pig"," Experiment on a friend as a guinea pig."],["Try_Out","Use the ability on monster"]]
    } 
 
-//needs choices leading to hoard
+Guinea_Pig: {
+    text: "“The frick’s wrong with you?” Jack, a friend you got to know during training, complained. Before you could say anything, the monster spotted you and obilatered everyone into sterner stuff."
+    options: [["prolog", "restart"]]
+}
+
+Try_Out: {
+    text: "Using a little trick you learned from training, you distracted the monster when the other recruits finished the monster off. “Now that’s what I’m talking about.”"
+    options: [["Hoard"]]
+}
 
    Hoard: {
        text: "After defeating the monster you find a hoard in a large cave that they were guarding that is now ripe for the taking."
@@ -77,10 +85,14 @@ var story = {
        options: [["Touch","Touch It (end)"],["Don't Touch","Probably Not Worth It"]]
    }
 
+   //need artifact effects
+
    Hellers: {
        text:"Suddenly, you came across armored beings with red lights glowing from within their bodies. You recognize that they were the Destroyer’s elite troopers, the Hellers, thanks to descriptions from the group thanks to their previous. What should you do now?"
        options: [["With Firearm","You picked Firearm"],["With Sword","You picked the sword"],["With Magic","You picked magic"]]
    }
+
+   //need fight info
 
 Proceed2: {
     text: "  You continued on deep into the cave. There’s a light ahead of you. Could this be the exit? "
@@ -91,6 +103,8 @@ LeaveCave: {
     text: "After you leave the cave, you and the group continue to transverse the land until you run into a new danger. You see a group of average people being marched off by minions of the Destroyer. You now have a choice either to help them or follow them."
     options: [["Save Them","The groups choses to save them"],["Don't Save Them","You decided not to save them"]]
 }
+
+// continue here
 
 Boss: {
     text: "…The Destroyer being itself. It lets out a defining roar that warns you that it’s better to make good decisions. What to do now?"
@@ -117,6 +131,18 @@ Cilmax: {
 Frick: {
 text: "With his mysterious power, the Destroyer freezes time just as the group arrived. This leaves only you, Jack and the Destroyer unfroze by its eternal powers. “That’s better.” the Destroyer remarks. It then reveals the entire truth. The group that you had followed were a bunch of cultists who are planning to take over the world once they defeat the Destroyer and take his powers to control reality. Jack is not sure. Surely the Destroyer is bloating."
 options: [["Believe"],["Don't Believe"]]
+}
+
+Believe: {
+    ""
+}
+
+DisBelieve: {
+text: "“You’re lying.” you said as you proceeded to unleash your ultimate abilities to the Destroyer while it was still in the middle of its speech. The Destroyer is no more."
+
+"Woah. You actually defeated the Destroyer!” your friend Jack cheered. “The prochory stated that it should be me but you were the one that actually did it."
+
+The group congratulated you and with your new powers gained, you are now in charge of different realities. You are the…"
 }
 
 
