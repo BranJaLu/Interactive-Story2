@@ -6,14 +6,13 @@
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         background-color: rgb(116, 0, 224);
         border-radius: 3px;
-        padding: 7.5px;
+        padding: 10px;
     }
 
     body {
         background-color: aquamarine;
         color: rgba(245, 0, 233, 0.863);
         font-family: 'Press Start 2P', cursive;
-        font-size: 2.5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -23,12 +22,27 @@
         text-indent: 10%;
     }
 
+    .center-right-outlined {
+font-size: 39px;
+color: blueviolet;
+    }
+
+    .start-over-outlined {
+        font-family: 'Start Over Outlined';
+        font-style: normal;
+        display: inline-block;
+
+
+    }
+
     button{
-        font-size: 2em;
+        font-size: 1em;
         background-color: chartreuse;
         padding: .5em;
         border: 2.2em;
         border-radius: .3em;
+        line-height: 23px;
+        border-top-right-radius: 12px 213px;
     }
 
     .buttonPadding {
@@ -52,4 +66,13 @@
          flex-direction: row;
          background-color: beige;
          border-radius: .68em;
+     }
+
+     section {
+         display: block;
+     }
+
+     .story {
+         width: 55;
+         text-align: justify;
      }
