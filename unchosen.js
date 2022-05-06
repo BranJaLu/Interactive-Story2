@@ -36,7 +36,7 @@ var story = {
         options: [["test", "finish training"]]
     },
     
-    firearm: {
+    gun: {
         text: "These skills seem too complex so you decided to take the path that is much easier. Plus, the dwarf has a much more fun personality than the other two mentors. Your training under his hands will last for 5 months.",
         options: [["test", "finish training"]]
     },
@@ -47,28 +47,28 @@ var story = {
     },
     
     guinea_Pig: {
-        text: "“The frick’s wrong with you?” Jack, a friend you got to know during training, complained. Before you could say anything, the monster spotted you and obilatered everyone into sterner stuff.",
+        text: "“The frick’s wrong with you?” Jack, a friend you got to know during training, complained. Before you could say anything, the monster spotted you and obliterates everyone into sterner stuff.",
         options: [["prolog", "restart"]]
     },
     
-    try_Out: {
+    Try_Out: {
         text: "Using a little trick you learned from training, you distracted the monster when the other recruits finished the monster off. “Now that’s what I’m talking about.” you then see a cave behind it",
         options: [["hoard", "explore the cave"]]
     },
     
     hoard: {
         text: "After defeating the monster you find a hoard in a large cave that they were guarding that is now ripe for the taking.",
-        options: [["explore", "explore side"]["LeaveCave", " don’t explore"]]
+        options: [["explore", "explore side"], ["LeaveCave", " don’t explore"]]
     },
     
     explore: {
         text: "Unfortunately you fell down a hole and are now separated from the group. Now you have to find a way out by yourself.",
-        options: [["proceed1", "move forward"]]
+        options: [["Proceed1", "move forward"]]
     },
     
     Proceed1: {
-        text: "Suddenly, you came across armored beings with red lights glowing from within their bodies. You recognize that they were the Destroyer’s elite troopers, the Hellers, thanks to descriptions from the group thanks to their previous. What should you do now?",
-        options: [["Attack", "Attack Head-on"], ["flee", "flee"], ["Tunnel", "Look for a way around"]]
+        text: "previous encounter. What should you do now?",
+        options: [["Attack", "Attack Head-on"], ["Fight1", "use training to fight"], ["Tunnel", "Look for a way around"]]
     },
     
     Attack: {
@@ -78,12 +78,12 @@ var story = {
     
     Tunnel: {
         text: "There must be a way to escape. Quickly you spot a tunnel.  Should you go for it?",
-        options: [["fight", "decide to Fight Instead"], ["Enter", "Take the tunnel"]]
+        options: [["Fight1", "decide to Fight Instead"], ["Enter", "Take the tunnel"]]
     },
     
     Enter: {
         text: "Well this is better than this.” You started before running into it. The tunnel then closes behind you and now you’re all alone. Next to you you see a glint",
-        options: [["artifact", "what to do"]]
+        options: [["Artifact", "what to do"]]
     },
     
     Artifict: {
@@ -96,9 +96,9 @@ var story = {
     },
     DontTouch: {
         text: '“Not worth my time” you said. After you begin walking away you are suddenly teleported into a different area and you end up face to face with the Destroyer themself.',
-        options: [["boss", "approach the Destroyer"]]
+        options: [["Boss", "approach the Destroyer"]]
     },
-    Hellers: {
+    Fight1: {
         text: "Suddenly, you came across armored beings with red lights glowing from within their bodies. You recognize that they were the Destroyer’s elite troopers, the Hellers, thanks to descriptions from the group thanks to their previous. What should you do now?",
         options: [["with_Firearm", "you picked Firearm"], ["with_Sword", "you picked the sword"], ["With_Magic", "You picked magic"]]
     },
@@ -110,21 +110,21 @@ var story = {
 
     Auto: {
         text: "Fire in the hole as you fire in every direction at the Hellers until you ran out of ammunition. As the smoke comes out of the barrel you realize that none of the Hellers were harmed. Then in a matter of seconds, they unleashed their payload. Try to be less impulsive.",
-        options: [["prolog", "you died"]]
+        options: [["prolog", "you died"]],
     },
 
     special: {
         text: "You remember some special ammunition that Hurman had given you. You decided to test it out but first you need to find their weak points.",
-        options: [["Proceed2", "You defeat them"]]
+        options: [["Proceed2", "You defeat them"]],
     },
     
     With_Sword: {
         text: "now that you decided to use the sword you have to decide how to use it",
-        options: [["swirl", "run forward and spin"], ["dot", "..."]]  
+        options: [["swirl", "run forward and spin"], ["dot", "..."]],
     },
     
     swirl: {
-        text: "A swirling attack should do. Or was it? Turns out your sword wasn’t enough to damage the Hellers and they obiteration you into sterner stuff.",
+        text: "A swirling attack should do. Or was it? Turns out your sword wasn’t enough to damage the Hellers and they obliterate you into sterner stuff.",
         options: [["prolog", "you died"]]
     },
 
@@ -145,12 +145,12 @@ var story = {
 
     clones: {
         text: "Quickly, you summon a spell that not only creates an army of clones of yourself but also time loops that distracts the Hellers. You then slip by them with a couple of your clones as some Hellers target you. Luckily you were able to escape.",
-        options:[["Proceed2", "escape deeper into the caves"]]
+        options:[["Proceed2", "escape deeper into the caves"]],
     },
 
     Proceed2: {
         text: "You continued on deep into the cave. There’s a light ahead of you. Could this be the exit? ",
-        options: [["Investigate"]]
+        options: [["Investigate", "Investigate"]]
     },
     
     LeaveCave: {
@@ -160,7 +160,7 @@ var story = {
     
     Save: {
         text: "You and the group decide that it isn't worth waiting and you guys rush in killing all of the minions. After saving them one of them tells you that they overheard some of the minions saying that they were almost to their lair. You then set a camp for the survivors and then head in the direction they were being marched. A few days later the scout for the group tells us that they found the base.",
-        options: [["night", "attack at night"], "day", "attack at day"]
+        options: [["night", "attack at night"], ["day", "attack at day"]]
     },
 
     night: {
@@ -238,22 +238,22 @@ var story = {
     
     Accept: {
         text: '“Excellent.” The Destroyer rejoices in excitement. “Now we can rule the world as one.” You then proceed to lead the Destroyer’s hell troopers to the direction that the heroes are located. Then in a matter of seconds, they are gone. “Why….Why?” your former friend Jack said as he died from a random Heller. Soon the world of SPAF, the entire galaxy, and all of realities will fall to the might of the Destroyer and his multi-dimensional army with you as the second-in-command. The End',
-        options: [["prolog", "restart?"]]
+        options: [["prolog", "restart?"]],
     },
 
     No: {
         text: "With his mysterious power, the Destroyer freezes time just as the group arrived. This leaves only you, Jack and the Destroyer unfroze by its eternal powers. “That’s better.” the Destroyer remarks. It then reveals the entire truth. The group that you had followed were a bunch of cultists who are planning to take over the world once they defeat the Destroyer and take his powers to control reality. Jack is not sure. Surely the Destroyer is bloating.",
-        options: [["Believe"], ["NoBelieve"]]
+        options: [["Believe"], ["NoBelieve"]],
     },
     
     Believe: {
         text:'Realizing that the so-called heroes, the group that you followed, were behind everything. The minions that destroyed your town were actually their followers using magic to disguise themselves as the Destroyer’s minions. You then defect to the Destroyer’s side along with your friend Jack before you wage an assault on the cultists.“How did you…” before you killed the leader of the group. The Hellers, Jack, and the Destroyer took care of the rest. Some of the followers realize the truth and follow in your footsteps." You returned back to the world as a guardian of different realities with the Destroyer as your mentor while Jack is now your student. The End',
-        options: [["prolog", "restart?"]]
+        options: [["prolog", "restart?"]],
     },
     
     NoBelieve: {
         text: '“You’re lying.” you said as you proceeded to unleash your ultimate abilities to the Destroyer while it was still in the middle of its speech. The Destroyer is no more." "Woah. You actually defeated the Destroyer!” your friend Jack cheered. “The prochory stated that it should be me but you were the one that actually did it." "The group congratulated you and with your new powers gained, you are now in charge of different realities. You are the Controller" The End',
-        options: [["prolog", "restart?"]]
+        options: [["prolog", "restart?"]],
     }
 }
 
