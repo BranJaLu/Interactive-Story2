@@ -15,7 +15,7 @@ var story = {
         options: [["train", "train with the group"]]
     },
     disregard: {
-        text: "group shows up later and attacks town but heros are still recruiting so still around and help. see that they intend to help and decide to join them",
+        text: "Group shows up later and attacks town but heros are still recruiting so still around and help. see that they intend to help and decide to join them",
         options: [["train", "train with the group"]]
     },
     stay: {
@@ -31,12 +31,12 @@ var story = {
         options: [["test", "finish training"]]
     },
     
-    firearm: {
+    sword: {
         text: "Wanting to be the hack and slash person, you asked the boastful expert that you are interested in that type of art. It will take a maximum of 6 months to complete.",
         options: [["test", "finish training"]]
     },
     
-    sword: {
+    firearm: {
         text: "These skills seem too complex so you decided to take the path that is much easier. Plus, the dwarf has a much more fun personality than the other two mentors. Your training under his hands will last for 5 months.",
         options: [["test", "finish training"]]
     },
