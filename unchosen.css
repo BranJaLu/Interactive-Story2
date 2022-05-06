@@ -22,19 +22,6 @@
         text-indent: 10%;
     }
 
-    .center-right-outlined {
-font-size: 39px;
-color: blueviolet;
-    }
-
-    .start-over-outlined {
-        font-family: 'Start Over Outlined';
-        font-style: normal;
-        display: inline-block;
-
-
-    }
-
     button{
         font-size: 1em;
         background-color: chartreuse;
@@ -43,6 +30,11 @@ color: blueviolet;
         border-radius: .3em;
         line-height: 23px;
         border-top-right-radius: 12px 213px;
+        border-radius: 5px;
+        padding: 24px;
+        margin: auto;
+        display: block;
+        cursor: pointer;
     }
 
     .buttonPadding {
@@ -76,3 +68,42 @@ color: blueviolet;
          width: 55;
          text-align: justify;
      }
+
+.center_right {
+    display: flex;
+    justify-content: center;
+    padding-left: 12px;
+}
+
+.center_right button {
+    background-color: transparent;
+    border: none;
+}
+
+.center_right span {
+    font-size: small;
+    color: azure;
+}
+
+#buttonArea {
+    display: flex;
+
+}
+
+span.material-symbols-outlined {
+    font-size: 70px;
+}
+
+.center_right span:hover {
+    animation: refreshRotate 1s ease-in-out infinite;
+    color:rgba(245, 0, 233, 0.863);
+    }
+
+    @keyframes refreshRotate{
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
