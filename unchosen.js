@@ -7,7 +7,7 @@ window.onload = function () { //makes sure the javascript load before it is used
 
 var story = {
     prolog: {
-        text: "In a world where steampunk and fantasy exist in one world, SPAF. It was a normal day in a rural village where you are doing your usual business.",
+        text: "In a world where steampunk and fantasy exist in one world, SPAF. It was a normal day in a rural village where you are doing your usual business. As you go about your daily routine a group of adventurers arrives at your town. They stated that the Destroyer has returned and has plans to conquer the entire planet with his multi-dimensional army. They need new members to join their group whether they like to or be forced against their will.",
         options: [["join", "join the group"], ["disregard", "Disregard the fools' announcements"], ["stay", "Stick with everyday life"]]
     },
     join: {
@@ -27,17 +27,17 @@ var story = {
         options: [["magic", "learn magic"], ["sword", "learn to swordfight"], ["gun", "learn to use a gun"]]
     },
     magic: {
-        text: "You always wanted to learn how to use magic. While a bit strict, she is the most empathetic and also the youngest of the group. But this learning of magic is very complex and you will have to learn the basics for 8 months. Hope that you are prepared to use it properly.",
+        text: "You always wanted to learn how to use magic. While Prudence is a bit strict, she is the most empathetic and also the youngest of the group. But this learning of magic is very complex and you will have to learn the basics for 8 months. Hope that you are prepared to use it properly.",
         options: [["test", "finish training"]]
     },
     
     sword: {
-        text: "Wanting to be the hack and slash person, you asked the boastful expert that you are interested in that type of art. It will take a maximum of 6 months to complete.",
+        text: "Wanting to be the hack and slash person, you asked Sir Vug the boastful expert that you are interested in that type of art. It will take a maximum of 6 months to complete.",
         options: [["test", "finish training"]]
     },
     
     gun: {
-        text: "These skills seem too complex so you decided to take the path that is much easier. Plus, the dwarf has a much more fun personality than the other two mentors. Your training under his hands will last for 5 months.",
+        text: "These skills seem too complex so you decided to take the path that is much easier. Plus, Hurman Glohalm the dwarf has a much more fun personality than the other two mentors. Your training under his hands will last for 5 months.",
         options: [["test", "finish training"]]
     },
     
@@ -67,7 +67,7 @@ var story = {
     },
     
     Proceed1: {
-        text: "previous encounter. What should you do now?",
+        text: "Suddenly, you came across armored beings with red lights glowing from within their bodies. You recognize that they were the Destroyer’s elite troopers, the Hellers, thanks to descriptions from the group thanks to their previous. What should you do now?",
         options: [["Attack", "Attack Head-on"], ["Fight1", "use training to fight"], ["Tunnel", "Look for a way around"]]
     },
     
@@ -82,7 +82,7 @@ var story = {
     },
     
     Enter: {
-        text: "Well this is better than this.” You started before running into it. The tunnel then closes behind you and now you’re all alone. Next to you you see a glint",
+        text: "Well this is better than this.” You started before running into it. The tunnel then closes behind you and now you’re all alone. Next to you you see an old artifact that to be over a million… not much older than that. Should you inspect it?",
         options: [["Artifact", "what to do"]]
     },
     
@@ -100,7 +100,7 @@ var story = {
     },
     Fight1: {
         text: "Suddenly, you came across armored beings with red lights glowing from within their bodies. You recognize that they were the Destroyer’s elite troopers, the Hellers, thanks to descriptions from the group thanks to their previous. What should you do now?",
-        options: [["with_Firearm", "you picked Firearm"], ["with_Sword", "you picked the sword"], ["With_Magic", "You picked magic"]]
+        options: [["With_Firearm", "you picked Firearm"], ["With_Sword", "you picked the sword"], ["With_Magic", "You picked magic"]]
     },
     
     With_Firearm: {
@@ -150,7 +150,7 @@ var story = {
 
     Proceed2: {
         text: "You continued on deep into the cave. There’s a light ahead of you. Could this be the exit? ",
-        options: [["Investigate", "Investigate"]]
+        options: [["LeaveCave", "LeaveCave"]]
     },
     
     LeaveCave: {
@@ -231,7 +231,7 @@ var story = {
         options: [["Climax", "..."]]
     },
 
-    Cilmax: {
+    Climax: {
         text: '“I can see how much your childhood was. Orphaned. Abandoned. Casted as an underdog……” the Destroyer monologues. “Actually my life was normal. First of all, my parents are alive and I am not an underdog.” you immediately pointed out. “Oh hang on for a minute.” the Destroyer said as it looked at a scroll again 5 minutes later…… "Well it appears that your friend Jack was the one who was supposed to meet me but that was not how it was supposed to go. But I’m not into that chosen one thing. Since you’re in Jack’s place, I have a deal for you instead.”“And what is it?” you asked.“Do you wish for a world where everything is better, like not having to live in poverty while the rich enjoy a good lifestyle or….” Later… “Take my deal, and we will make the world a better place.”',
         options: [["No", "No"], ["Accept", "I accept your deal"]]
     },
@@ -243,7 +243,7 @@ var story = {
 
     No: {
         text: "With his mysterious power, the Destroyer freezes time just as the group arrived. This leaves only you, Jack and the Destroyer unfroze by its eternal powers. “That’s better.” the Destroyer remarks. It then reveals the entire truth. The group that you had followed were a bunch of cultists who are planning to take over the world once they defeat the Destroyer and take his powers to control reality. Jack is not sure. Surely the Destroyer is bloating.",
-        options: [["Believe"], ["NoBelieve"]],
+        options: [["Believe","Believe"], ["NoBelieve","Don't Believe"]],
     },
     
     Believe: {
@@ -252,7 +252,7 @@ var story = {
     },
     
     NoBelieve: {
-        text: '“You’re lying.” you said as you proceeded to unleash your ultimate abilities to the Destroyer while it was still in the middle of its speech. The Destroyer is no more." "Woah. You actually defeated the Destroyer!” your friend Jack cheered. “The prochory stated that it should be me but you were the one that actually did it." "The group congratulated you and with your new powers gained, you are now in charge of different realities. You are the Controller" The End',
+        text: '“You’re lying.” you said as you proceeded to unleash your ultimate abilities to the Destroyer while it was still in the middle of its speech. The Destroyer is no more." "Woah. You actually defeated the Destroyer!” your friend Jack cheered. “The prophecy stated that it should be me but you were the one that actually did it." "The group congratulated you and with your new powers gained, you are now in charge of different realities. You are the Controller" The End',
         options: [["prolog", "restart?"]],
     }
 }
