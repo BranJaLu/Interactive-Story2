@@ -86,7 +86,7 @@ var story = {
         options: [["Artifact", "what to do"]]
     },
     
-    Artifict: {
+    Artifact: {
         text: "You come across an artifact that appears to be over a million… not much older than that. Should you inspect it?",
         options: [["Touch", "Touch It"], ["DontTouch", "Probably Not Worth It"]]
     },
@@ -222,7 +222,7 @@ var story = {
     },
 
     Charge: {
-        text: "“I’M NOT SCARED OF YOU.” As you charged head on with all the skills you learned. You unleashed different magic spells, gunfire, and slash and hacking on the dragon but none of it works. In fact the dragon only got angry and obilatered you into sterner stuff. “Better luck next time hero.” the dragon said in a stern voice.",
+        text: "“I’M NOT SCARED OF YOU.” As you charged head on with all the skills you learned. You unleashed different magic spells, gunfire, and slash and hacking on the dragon but none of it works. In fact the dragon only got angry and obliterate you into sterner stuff. “Better luck next time hero.” the dragon said in a stern voice.",
         options: [["prolog", "you died"]]
     },
 
